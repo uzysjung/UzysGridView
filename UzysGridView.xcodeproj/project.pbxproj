@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		959511B71749F31D00E3CEAB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 959511B61749F31D00E3CEAB /* Default-568h@2x.png */; };
+		C0138E731467AB5200646E0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0138E721467AB5200646E0E /* UIKit.framework */; };
+		C0138E751467AB5200646E0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0138E741467AB5200646E0E /* Foundation.framework */; };
+		C0138E771467AB5200646E0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0138E761467AB5200646E0E /* CoreGraphics.framework */; };
+		C0138E7D1467AB5200646E0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0138E7B1467AB5200646E0E /* InfoPlist.strings */; };
+		C0138E7F1467AB5200646E0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0138E7E1467AB5200646E0E /* main.m */; };
+		C0138E831467AB5200646E0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0138E821467AB5200646E0E /* AppDelegate.m */; };
+		C0138E861467AB5200646E0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0138E851467AB5200646E0E /* ViewController.m */; };
+		C0138E891467AB5200646E0E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0138E871467AB5200646E0E /* ViewController.xib */; };
+		C0138E921467AEAF00646E0E /* UzysGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0138E911467AEAF00646E0E /* UzysGridViewCell.m */; };
+		C0138E951467B52B00646E0E /* UzysGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0138E941467B52B00646E0E /* UzysGridView.m */; };
+		C01F8037146BBF57005E342C /* UzysGridViewCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C01F8036146BBF57005E342C /* UzysGridViewCustomCell.m */; };
+		C0526F601470DA8600600175 /* icon_del.png in Resources */ = {isa = PBXBuildFile; fileRef = C0526F5E1470DA8600600175 /* icon_del.png */; };
+		C0526F611470DA8600600175 /* icon_del_h.png in Resources */ = {isa = PBXBuildFile; fileRef = C0526F5F1470DA8600600175 /* icon_del_h.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		959511B61749F31D00E3CEAB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C0138E6E1467AB5200646E0E /* UzysGridView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UzysGridView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0138E721467AB5200646E0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0138E741467AB5200646E0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0138E761467AB5200646E0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0138E7A1467AB5200646E0E /* UzysGridView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UzysGridView-Info.plist"; sourceTree = "<group>"; };
+		C0138E7C1467AB5200646E0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0138E7E1467AB5200646E0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0138E801467AB5200646E0E /* UzysGridView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UzysGridView-Prefix.pch"; sourceTree = "<group>"; };
+		C0138E811467AB5200646E0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0138E821467AB5200646E0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0138E841467AB5200646E0E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0138E851467AB5200646E0E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C0138E881467AB5200646E0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C0138E901467AEAF00646E0E /* UzysGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UzysGridViewCell.h; path = UzysGridView/UzysGridViewCell.h; sourceTree = "<group>"; };
+		C0138E911467AEAF00646E0E /* UzysGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UzysGridViewCell.m; path = UzysGridView/UzysGridViewCell.m; sourceTree = "<group>"; };
+		C0138E931467B52B00646E0E /* UzysGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UzysGridView.h; path = UzysGridView/UzysGridView.h; sourceTree = "<group>"; };
+		C0138E941467B52B00646E0E /* UzysGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UzysGridView.m; path = UzysGridView/UzysGridView.m; sourceTree = "<group>"; };
+		C01F8035146BBF57005E342C /* UzysGridViewCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysGridViewCustomCell.h; sourceTree = "<group>"; };
+		C01F8036146BBF57005E342C /* UzysGridViewCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysGridViewCustomCell.m; sourceTree = "<group>"; };
+		C0526F5E1470DA8600600175 /* icon_del.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_del.png; sourceTree = "<group>"; };
+		C0526F5F1470DA8600600175 /* icon_del_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_del_h.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0138E6B1467AB5200646E0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0138E731467AB5200646E0E /* UIKit.framework in Frameworks */,
+				C0138E751467AB5200646E0E /* Foundation.framework in Frameworks */,
+				C0138E771467AB5200646E0E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0138E631467AB5200646E0E = {
+			isa = PBXGroup;
+			children = (
+				959511B61749F31D00E3CEAB /* Default-568h@2x.png */,
+				C0138E781467AB5200646E0E /* UzysGridView */,
+				C0138E711467AB5200646E0E /* Frameworks */,
+				C0138E6F1467AB5200646E0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0138E6F1467AB5200646E0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0138E6E1467AB5200646E0E /* UzysGridView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0138E711467AB5200646E0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0138E721467AB5200646E0E /* UIKit.framework */,
+				C0138E741467AB5200646E0E /* Foundation.framework */,
+				C0138E761467AB5200646E0E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0138E781467AB5200646E0E /* UzysGridView */ = {
+			isa = PBXGroup;
+			children = (
+				C0138E8F1467AB7300646E0E /* UzysGridView */,
+				C01F8035146BBF57005E342C /* UzysGridViewCustomCell.h */,
+				C01F8036146BBF57005E342C /* UzysGridViewCustomCell.m */,
+				C0138E811467AB5200646E0E /* AppDelegate.h */,
+				C0138E821467AB5200646E0E /* AppDelegate.m */,
+				C0138E841467AB5200646E0E /* ViewController.h */,
+				C0138E851467AB5200646E0E /* ViewController.m */,
+				C0138E871467AB5200646E0E /* ViewController.xib */,
+				C0138E791467AB5200646E0E /* Supporting Files */,
+			);
+			path = UzysGridView;
+			sourceTree = "<group>";
+		};
+		C0138E791467AB5200646E0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0138E7A1467AB5200646E0E /* UzysGridView-Info.plist */,
+				C0138E7B1467AB5200646E0E /* InfoPlist.strings */,
+				C0138E7E1467AB5200646E0E /* main.m */,
+				C0138E801467AB5200646E0E /* UzysGridView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0138E8F1467AB7300646E0E /* UzysGridView */ = {
+			isa = PBXGroup;
+			children = (
+				C0526F5D1470DA8600600175 /* Resource */,
+				C0138E901467AEAF00646E0E /* UzysGridViewCell.h */,
+				C0138E911467AEAF00646E0E /* UzysGridViewCell.m */,
+				C0138E931467B52B00646E0E /* UzysGridView.h */,
+				C0138E941467B52B00646E0E /* UzysGridView.m */,
+			);
+			name = UzysGridView;
+			sourceTree = "<group>";
+		};
+		C0526F5D1470DA8600600175 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C0526F5E1470DA8600600175 /* icon_del.png */,
+				C0526F5F1470DA8600600175 /* icon_del_h.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0138E6D1467AB5200646E0E /* UzysGridView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0138E8C1467AB5200646E0E /* Build configuration list for PBXNativeTarget "UzysGridView" */;
+			buildPhases = (
+				C0138E6A1467AB5200646E0E /* Sources */,
+				C0138E6B1467AB5200646E0E /* Frameworks */,
+				C0138E6C1467AB5200646E0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UzysGridView;
+			productName = UzysGridView;
+			productReference = C0138E6E1467AB5200646E0E /* UzysGridView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0138E651467AB5200646E0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = NCSoft;
+			};
+			buildConfigurationList = C0138E681467AB5200646E0E /* Build configuration list for PBXProject "UzysGridView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C0138E631467AB5200646E0E;
+			productRefGroup = C0138E6F1467AB5200646E0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0138E6D1467AB5200646E0E /* UzysGridView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0138E6C1467AB5200646E0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0138E7D1467AB5200646E0E /* InfoPlist.strings in Resources */,
+				C0138E891467AB5200646E0E /* ViewController.xib in Resources */,
+				C0526F601470DA8600600175 /* icon_del.png in Resources */,
+				C0526F611470DA8600600175 /* icon_del_h.png in Resources */,
+				959511B71749F31D00E3CEAB /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0138E6A1467AB5200646E0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0138E7F1467AB5200646E0E /* main.m in Sources */,
+				C0138E831467AB5200646E0E /* AppDelegate.m in Sources */,
+				C0138E861467AB5200646E0E /* ViewController.m in Sources */,
+				C0138E921467AEAF00646E0E /* UzysGridViewCell.m in Sources */,
+				C0138E951467B52B00646E0E /* UzysGridView.m in Sources */,
+				C01F8037146BBF57005E342C /* UzysGridViewCustomCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C0138E7B1467AB5200646E0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0138E7C1467AB5200646E0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C0138E871467AB5200646E0E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0138E881467AB5200646E0E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0138E8A1467AB5200646E0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C0138E8B1467AB5200646E0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0138E8D1467AB5200646E0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UzysGridView/UzysGridView-Prefix.pch";
+				INFOPLIST_FILE = "UzysGridView/UzysGridView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C0138E8E1467AB5200646E0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UzysGridView/UzysGridView-Prefix.pch";
+				INFOPLIST_FILE = "UzysGridView/UzysGridView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0138E681467AB5200646E0E /* Build configuration list for PBXProject "UzysGridView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0138E8A1467AB5200646E0E /* Debug */,
+				C0138E8B1467AB5200646E0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0138E8C1467AB5200646E0E /* Build configuration list for PBXNativeTarget "UzysGridView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0138E8D1467AB5200646E0E /* Debug */,
+				C0138E8E1467AB5200646E0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0138E651467AB5200646E0E /* Project object */;
+}
