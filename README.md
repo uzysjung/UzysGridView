@@ -5,10 +5,9 @@ UzysGridView is simple GridView iOS Component which you can easily change positi
 
 ![Screenshot](https://github.com/uzysjung/UzysGridView/raw/master/UzysGridView1.png) ![Screenshot](https://github.com/uzysjung/UzysGridView/raw/master/UzysGridView2.png)
 
-![Screenshot](https://github.com/uzysjung/UzysGridView/raw/master/UzysGridView3.gif)
+![Screenshot](https://github.com/uzysjung/UzysGridView/raw/master/UzysGridView3.gif) 
 
-[![UzysGridViewDemo](http://img.youtube.com/vi/1nk1SK0RiWs/0.jpg)](http://www.youtube.com/watch?v=1nk1SK0RiWs)
-
+[Youtube Link](http://www.youtube.com/watch?v=1nk1SK0RiWs)
 
 **UzysGridView features:**
 * you can move the cell position to other page.
