@@ -11,7 +11,7 @@
 
 @class UzysGridView;
 
-#pragma - UzysGridViewDataSource
+#pragma mark - UzysGridViewDataSource
 @protocol UzysGridViewDataSource<NSObject>
 -(NSInteger) numberOfCellsInGridView:(UzysGridView *)gridview;
 -(UzysGridViewCell *)gridView:(UzysGridView *)gridview cellAtIndex:(NSUInteger)index;
@@ -22,7 +22,7 @@
 -(void) gridView:(UzysGridView *)gridview InsertAtIndex:(NSUInteger)index;
 @end
 
-#pragma -UzysGridViewDelegate
+#pragma mark - UzysGridViewDelegate
 @protocol UzysGridViewDelegate<NSObject>
 @optional
 -(void) gridView:(UzysGridView *)gridView didSelectCell:(UzysGridViewCell *)cell atIndex:(NSUInteger)index;
@@ -36,7 +36,7 @@
 -(void) gridView:(UzysGridView *)gridView TouchCanceled:(UzysGridViewCell *)cell;
 @end
 
-#pragma UzysGridViewScrollViewDelegate
+#pragma mark - UzysGridViewScrollViewDelegate
 @protocol UzysGridViewScrollViewDelegate<NSObject>
 @optional
 -(void) gridView:(UzysGridView *)gridView scrollViewDidEndDecelerating:(UIScrollView *)scrollView;
@@ -46,7 +46,7 @@
 -(void) gridView:(UzysGridView *)gridView scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView;
 @end
 
-#pragma -UzysGridView
+#pragma mark - UzysGridView
 @interface UzysGridView : UIView <UIScrollViewDelegate,UzysGridViewCellDelegate,UIAlertViewDelegate>
 {
     UIScrollView *_scrollView;
@@ -73,14 +73,5 @@
 @property (nonatomic, assign) BOOL editable;
 
 - (void) reloadData;
-- (id)initWithFrame:(CGRect)frame numOfRow:(NSUInteger)rows numOfColumns:(NSUInteger)columns cellMargin:(NSUInteger)cellMargins;
-
-//Cell Method;
-- (void) setCurrentPageIndex:(NSUInteger)currentPageIndex;
-- (void) MovePage:(NSInteger)index animated:(BOOL) animate;
-- (void)cellWasSelected:(UzysGridViewCell *)cell;
-- (void)cellWasDelete:(UzysGridViewCell *)cell;
-- (void) CellSetPosition:(UzysGridViewCell *) cell;
-- (void)editableAnimation;
-- (NSInteger) CellCollisionDetection:(UzysGridViewCell *) cell;
+- (id) initWithFrame:(CGRect)frame numOfRow:(NSUInteger)rows numOfColumns:(NSUInteger)columns cellMargin:(NSUInteger)cellMargins;
 @end

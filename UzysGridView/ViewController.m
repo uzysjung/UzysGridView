@@ -16,7 +16,12 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
-
+-(void)dealloc
+{
+    [_gridView release];
+    
+    [super dealloc];
+}
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -26,16 +31,16 @@
     UIBarButtonItem *barBtn = [[[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStyleDone target:self action:@selector(ButtonTapp:)] autorelease];
     self.navigationItem.rightBarButtonItem = barBtn;
     
-    gridView = [[UzysGridView alloc] initWithFrame:self.view.frame numOfRow:3 numOfColumns:2 cellMargin:2];
-    gridView.delegate = self;
-    gridView.dataSource = self;
-    [self.view addSubview:gridView];
+    _gridView = [[UzysGridView alloc] initWithFrame:self.view.frame numOfRow:3 numOfColumns:2 cellMargin:2];
+    _gridView.delegate = self;
+    _gridView.dataSource = self;
+    [self.view addSubview:_gridView];
     
-    test_arr = [[NSMutableArray alloc] init];
+    _test_arr = [[NSMutableArray alloc] init];
     
     for(int i=0;i < 42;i++)
     {
-        [test_arr addObject:[NSString stringWithFormat:@"%d",i]];
+        [_test_arr addObject:[NSString stringWithFormat:@"Content %d",i]];
     }
     
   	// Do any additional setup after loading the view, typically from a nib.
@@ -53,7 +58,8 @@
     {
         toggle = YES;
     }
-    gridView.editable = toggle;
+    _gridView.editable = toggle;
+    [_gridView reloadData];
 }
 - (void)viewDidUnload
 {
@@ -91,16 +97,16 @@
 
 
 
-#pragma - UzysGridViewDataSource
+#pragma mark- UzysGridViewDataSource
 
 -(NSInteger) numberOfCellsInGridView:(UzysGridView *)gridview {
-    return [test_arr count];
+    return [_test_arr count];
 }
 -(UzysGridViewCell *)gridView:(UzysGridView *)gridview cellAtIndex:(NSUInteger)index
 {
     UzysGridViewCustomCell *cell = [[[UzysGridViewCustomCell alloc] initWithFrame:CGRectNull] autorelease];
-    cell.textLabel.text = [test_arr objectAtIndex:index];
-    cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", index];
+    cell.textLabel.text = [_test_arr objectAtIndex:index];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", _test_arr[index]];
     cell.backgroundView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     
     if(index ==0)
@@ -108,13 +114,28 @@
     return cell;
 }
 
+- (void)gridView:(UzysGridView *)gridview moveAtIndex:(NSUInteger)fromindex toIndex:(NSUInteger)toIndex
+{
+    NSMutableDictionary *Temp = [[_test_arr objectAtIndex:fromindex] retain];
+    
+    [_test_arr removeObjectAtIndex:fromindex];
+    [_test_arr insertObject:Temp atIndex:toIndex];
+    [Temp release];
+}
+
 -(void) gridView:(UzysGridView *)gridview deleteAtIndex:(NSUInteger)index 
 {
-    [test_arr removeObjectAtIndex:index];
+    [_test_arr removeObjectAtIndex:index];
 }
+
+#pragma mark- UzysGridViewDelegate
 -(void) gridView:(UzysGridView *)gridView changedPageIndex:(NSUInteger)index 
 {
     NSLog(@"Page : %d",index);
+}
+-(void) gridView:(UzysGridView *)gridView didSelectCell:(UzysGridViewCell *)cell atIndex:(NSUInteger)index
+{
+    NSLog(@"Cell index %d",index);
 }
 // ----------------------------------------------------------------------------------
 

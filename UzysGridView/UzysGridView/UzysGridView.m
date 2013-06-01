@@ -10,11 +10,20 @@
 #import "UzysGridView.h"
 
 @interface UzysGridView (private)
--(void) InitVariable;
--(void) CellRearrange:(NSInteger) moveIndex with:(NSInteger)targetIndex;
+- (void) InitVariable;
+- (void) CellRearrange:(NSInteger) moveIndex with:(NSInteger)targetIndex;
 - (void) DeleteCell:(NSInteger)index;
 - (void) createLayout:(BOOL)isVariable;
 - (void) LoadTotalView ;
+
+//Cell Method;
+- (void) setCurrentPageIndex:(NSUInteger)currentPageIndex;
+- (void) MovePage:(NSInteger)index animated:(BOOL) animate;
+- (void) cellWasSelected:(UzysGridViewCell *)cell;
+- (void) cellWasDelete:(UzysGridViewCell *)cell;
+- (void) CellSetPosition:(UzysGridViewCell *) cell;
+- (void) editableAnimation;
+- (NSInteger) CellCollisionDetection:(UzysGridViewCell *) cell;
 @end
 
 @implementation UzysGridView
@@ -615,7 +624,7 @@
         
         if(animate)
         {
-            [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationCurveEaseInOut animations:^{_scrollView.contentOffset = move;} completion:^(BOOL finished){
+            [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{_scrollView.contentOffset = move;} completion:^(BOOL finished){
             
                 if (delegate && [delegate respondsToSelector:@selector(gridView:endMovePage:)]) {
                     [delegate gridView:self endMovePage:index];

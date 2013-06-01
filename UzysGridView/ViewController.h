@@ -10,7 +10,7 @@
 #import "UzysGridView.h"
 @interface ViewController : UIViewController <UzysGridViewDelegate,UzysGridViewDataSource>
 {
-    UzysGridView *gridView;
-    NSMutableArray *test_arr;
+    UzysGridView *_gridView;
+    NSMutableArray *_test_arr;
 }
 @end
